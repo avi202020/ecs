@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('terraform init') {
       steps {
-        sh '/usr/local/bin/terraform -version'
+        sh '/usr/local/bin/terraform init'
       }
     }
 

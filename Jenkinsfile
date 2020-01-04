@@ -4,7 +4,8 @@ pipeline {
   stages {
     stage('terraform init') {
       steps {
-       /usr/local/bin/terraform -version
+        export PATH = /usr/local/bin
+        terraform -version
       }
     }
 

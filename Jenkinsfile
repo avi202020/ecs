@@ -5,7 +5,7 @@ pipeline {
       steps {
         withAWS(credentials: 'AWS_CREDENTIALS', region: 'us-east-1') {
            sh returnStatus: true, script: "/Library/Frameworks/Python.framework/Versions/3.7/bin/aws dynamodb create-table \
-              --table-name terraform-devops321   --attribute-definitions     AttributeName=LockID,AttributeType=S    --key-schema   AttributeName=Artist,KeyType=HASH"
+              --table-name terraform-devops321  --attribute-definitions  AttributeName=LockID,AttributeType=S  --key-schema  AttributeName=LockID,KeyType=HASH"
        }
     }
    }    

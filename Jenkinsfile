@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('S3  createBucket') {
+    stage('DynamoDB createBucket') {
       steps {
         withAWS(credentials: 'AWS_CREDENTIALS', region: 'us-east-1') {
            sh returnStatus: true, script: "/Library/Frameworks/Python.framework/Versions/3.7/bin/aws dynamodb create-table \

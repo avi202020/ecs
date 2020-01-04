@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('terraform init') {
       steps {
-        /bin/sh 'echo "Hello"'
+       /usr/local/bin/terraform -version
       }
     }
 

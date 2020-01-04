@@ -4,7 +4,7 @@ pipeline {
     stage('terraform init') {
       steps {
         export PATH = /usr/local/bin
-        sh 'terraform -version'
+        sh 'echo ${PATH}'
       }
     }
 

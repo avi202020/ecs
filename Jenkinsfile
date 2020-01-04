@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('terraform init') {
       steps {
-        sh 'echo "Hello"'
+        /bin/sh 'echo "Hello"'
       }
     }
 
